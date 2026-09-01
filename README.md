@@ -33,9 +33,10 @@ This repository is the GitHub-native index for XBSTACK debugging labs. Each entr
 
 ## MCP
 
-| Problem | Tool / reproduction | Full analysis |
-| --- | --- | --- |
-| MCP stdio `-32700 Parse Error`, polluted stdout, or tool-list failure | [mcp-stdio-diagnostics](https://github.com/xbstack/mcp-stdio-diagnostics) | [XBSTACK](https://www.xbstack.com/en/ai/mcp-json-rpc-parse-error/?utm_source=github&utm_medium=referral&utm_campaign=mcp_parse_error_fix&utm_content=problem_labs) |
+| Problem | Tool / reproduction | Upstream | Full analysis |
+| --- | --- | --- | --- |
+| `StreamableHTTPClientTransport` POST stays pending after request-scoped SSE error / EOF until timeout | [mcp-streamable-http-sse-pending-repro](https://github.com/xbstack/mcp-streamable-http-sse-pending-repro) | [typescript-sdk#2739](https://github.com/modelcontextprotocol/typescript-sdk/issues/2739) | [XBSTACK](https://www.xbstack.com/en/ai/mcp-streamable-http-sse-pending-timeout/?utm_source=github&utm_medium=referral&utm_campaign=mcp_streamable_http_sse_pending&utm_content=problem_labs) |
+| MCP stdio `-32700 Parse Error`, polluted stdout, or tool-list failure | [mcp-stdio-diagnostics](https://github.com/xbstack/mcp-stdio-diagnostics) | — | [XBSTACK](https://www.xbstack.com/en/ai/mcp-json-rpc-parse-error/?utm_source=github&utm_medium=referral&utm_campaign=mcp_parse_error_fix&utm_content=problem_labs) |
 
 ## AI SDK
 
@@ -53,4 +54,4 @@ This repository is the GitHub-native index for XBSTACK debugging labs. Each entr
 
 ## Search terms covered
 
-LangGraph `aupdate_state` Ambiguous update · LangGraph max_concurrency ignored · LangGraph SQLite partial commit · n8n `$json` Array null · n8n Raw Body stream · n8n ARM64 GLIBC_PRIVATE · OpenAI Responses No tool call found · OpenAI Agents RunState approval resume · MCP -32700 Parse Error · AI SDK 7 migration
+LangGraph `aupdate_state` Ambiguous update · LangGraph max_concurrency ignored · LangGraph SQLite partial commit · n8n `$json` Array null · n8n Raw Body stream · n8n ARM64 GLIBC_PRIVATE · OpenAI Responses No tool call found · OpenAI Agents RunState approval resume · MCP StreamableHTTPClientTransport SSE pending timeout · MCP -32700 Parse Error · AI SDK 7 migration
