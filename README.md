@@ -13,6 +13,7 @@ This repository is the GitHub-native index for XBSTACK debugging labs. Each entr
 | Problem | Reproduction | Upstream | Full analysis |
 | --- | --- | --- | --- |
 | `aupdate_state` raises `InvalidUpdateError: Ambiguous update, specify as_node` while sync `update_state` succeeds | [langgraph-aupdate-state-ambiguous-update-repro](https://github.com/xbstack/langgraph-aupdate-state-ambiguous-update-repro) | [langgraph#8714](https://github.com/langchain-ai/langgraph/issues/8714) | [XBSTACK](https://www.xbstack.com/en/ai/langgraph-aupdate-state-ambiguous-update/?utm_source=github&utm_medium=referral&utm_campaign=langgraph_aupdate_state_ambiguous_update&utm_content=problem_labs) |
+| `Command(resume=dict)` can mistake ordinary dict values for targeted interrupt maps | [langgraph-command-resume-dict-misclassification-repro](https://github.com/xbstack/langgraph-command-resume-dict-misclassification-repro) | [langgraph#8693](https://github.com/langchain-ai/langgraph/issues/8693) | [compatibility tracker](https://www.xbstack.com/en/tools/mcp-radar/?utm_source=github&utm_medium=referral&utm_campaign=langgraph_resume_dict_8693&utm_content=problem_labs) |
 | ToolNode async execution ignores `RunnableConfig.max_concurrency` | [langgraph-toolnode-max-concurrency-repro](https://github.com/xbstack/langgraph-toolnode-max-concurrency-repro) | [langgraph#8517](https://github.com/langchain-ai/langgraph/issues/8517) | [XBSTACK](https://www.xbstack.com/en/ai/langgraph-toolnode-max-concurrency-ignored/?utm_source=github&utm_medium=referral&utm_campaign=langgraph_toolnode_max_concurrency&utm_content=problem_labs) |
 | SQLite store batch failure can partially commit an earlier TTL mutation | [langgraph-sqlite-partial-commit-repro](https://github.com/xbstack/langgraph-sqlite-partial-commit-repro) | [langgraph#8590](https://github.com/langchain-ai/langgraph/issues/8590) | [XBSTACK](https://www.xbstack.com/en/ai/langgraph-checkpointer-memory-sqlite-redis/?utm_source=github&utm_medium=referral&utm_campaign=langgraph_sqlite_partial_commit&utm_content=problem_labs) |
 
@@ -43,6 +44,7 @@ This repository is the GitHub-native index for XBSTACK debugging labs. Each entr
 | Problem | Reproduction | Full analysis |
 | --- | --- | --- |
 | AI SDK 7 migration: tool calls, streaming, interruption and recovery boundaries | [xbstack-ai-sdk-7-migration-demo](https://github.com/xbstack/xbstack-ai-sdk-7-migration-demo) | [XBSTACK](https://www.xbstack.com/en/ai/vercel-ai-sdk-7-migration-production/?utm_source=github&utm_medium=referral&utm_campaign=ai_sdk_7_migration&utm_content=problem_labs) |
+| `WorkflowAgent` signed approval: unsupported baseline → opt-in signed replay enforcement | [ai-sdk-workflowagent-signed-approval-repro](https://github.com/xbstack/ai-sdk-workflowagent-signed-approval-repro) | [vercel/ai#19964](https://github.com/vercel/ai/issues/19964) · [PR #19976](https://github.com/vercel/ai/pull/19976) |
 
 ## How these labs are maintained
 
@@ -54,4 +56,4 @@ This repository is the GitHub-native index for XBSTACK debugging labs. Each entr
 
 ## Search terms covered
 
-LangGraph `aupdate_state` Ambiguous update · LangGraph max_concurrency ignored · LangGraph SQLite partial commit · n8n `$json` Array null · n8n Raw Body stream · n8n ARM64 GLIBC_PRIVATE · OpenAI Responses No tool call found · OpenAI Agents RunState approval resume · MCP StreamableHTTPClientTransport SSE pending timeout · MCP -32700 Parse Error · AI SDK 7 migration
+LangGraph `aupdate_state` Ambiguous update · LangGraph `Command(resume=dict)` interrupt-map misclassification · LangGraph max_concurrency ignored · LangGraph SQLite partial commit · n8n `$json` Array null · n8n Raw Body stream · n8n ARM64 GLIBC_PRIVATE · OpenAI Responses No tool call found · OpenAI Agents RunState approval resume · MCP StreamableHTTPClientTransport SSE pending timeout · MCP -32700 Parse Error · AI SDK WorkflowAgent signed approval · AI SDK 7 migration
