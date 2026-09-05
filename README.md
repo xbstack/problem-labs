@@ -57,4 +57,4 @@ This repository is the GitHub-native index for XBSTACK debugging labs. Each entr
 
 ## Search terms covered
 
-LangGraph `aupdate_state` Ambiguous update · LangGraph `Command(resume=dict)` interrupt-map misclassification · LangGraph max_concurrency ignored · LangGraph SQLite partial commit · n8n `$json` Array null · n8n Raw Body stream · n8n ARM64 GLIBC_PRIVATE · OpenAI Responses No tool call found · OpenAI Agents RunState approval resume · MCP StreamableHTTPClientTransport SSE pending timeout · MCP -32700 Parse Error · AI SDK WorkflowAgent signed approval · AI SDK 7 migration
+LangGraph `aupdate_state` Ambiguous update · LangGraph `Command(resume=dict)` interrupt-map misclassification · LangGraph max_concurrency ignored · LangGraph SQLite partial commit · LangGraph first durable checkpoint · accepted run lost · `EmptyInputError` recovery · n8n `$json` Array null · n8n Raw Body stream · n8n ARM64 GLIBC_PRIVATE · OpenAI Responses No tool call found · OpenAI Agents RunState approval resume · MCP StreamableHTTPClientTransport SSE pending timeout · MCP -32700 Parse Error · AI SDK WorkflowAgent signed approval · AI SDK 7 migration
