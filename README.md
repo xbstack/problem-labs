@@ -47,6 +47,23 @@ This repository is the GitHub-native index for XBSTACK debugging labs. Each entr
 | AI SDK 7 migration: tool calls, streaming, interruption and recovery boundaries | [xbstack-ai-sdk-7-migration-demo](https://github.com/xbstack/xbstack-ai-sdk-7-migration-demo) | [XBSTACK](https://www.xbstack.com/en/ai/vercel-ai-sdk-7-migration-production/?utm_source=github&utm_medium=referral&utm_campaign=ai_sdk_7_migration&utm_content=problem_labs) |
 | `WorkflowAgent` signed approval: unsupported baseline → opt-in signed replay enforcement | [ai-sdk-workflowagent-signed-approval-repro](https://github.com/xbstack/ai-sdk-workflowagent-signed-approval-repro) | [vercel/ai#19964](https://github.com/vercel/ai/issues/19964) · [PR #19976](https://github.com/vercel/ai/pull/19976) |
 
+## Upstream issue watch (2026-11-06; not independently reproduced)
+
+These upstream reports are **not XBSTACK reproductions**. Each link below points to an existing, reviewed technical guide. A closed issue does not by itself verify which release contains a fix; do not treat different root causes as interchangeable.
+
+| Upstream report | Engineering check | Existing guide |
+| --- | --- | --- |
+| LangGraph [#9602](https://github.com/langchain-ai/langgraph/issues/9602) | Subgraph output schema + reducer under astream_events | [XBSTACK guide](https://www.xbstack.com/en/ai/langgraph-subgraph-worker-state/?utm_source=github&utm_medium=referral&utm_campaign=upstream_issue_watch_20261106&utm_content=problem_labs_readme) |
+| LangGraph [#9556](https://github.com/langchain-ai/langgraph/issues/9556) | Parallel ToolNode Command.update message ordering (distinct from concurrency limits) | [XBSTACK guide](https://www.xbstack.com/en/ai/langgraph-toolnode-max-concurrency-ignored/?utm_source=github&utm_medium=referral&utm_campaign=upstream_issue_watch_20261106&utm_content=problem_labs_readme) |
+| LangGraph [#9607](https://github.com/langchain-ai/langgraph/issues/9607) | SQLite Store integer filtering, distinct from checkpoint recovery | [XBSTACK guide](https://www.xbstack.com/en/ai/langgraph-checkpointer-memory-sqlite-redis/?utm_source=github&utm_medium=referral&utm_campaign=upstream_issue_watch_20261106&utm_content=problem_labs_readme) |
+| LangGraph [#9546](https://github.com/langchain-ai/langgraph/issues/9546) | Stale dependent task output after crash recovery | [XBSTACK guide](https://www.xbstack.com/en/ai/langgraph-agent-error-recovery-retry-timeout/?utm_source=github&utm_medium=referral&utm_campaign=upstream_issue_watch_20261106&utm_content=problem_labs_readme) |
+| n8n [#43032](https://github.com/n8n-io/n8n/issues/43032) | MCP failed-execution stack/result data minimization | [XBSTACK guide](https://www.xbstack.com/en/ai/mcp-security-best-practices/?utm_source=github&utm_medium=referral&utm_campaign=upstream_issue_watch_20261106&utm_content=problem_labs_readme) |
+| n8n [#42981](https://github.com/n8n-io/n8n/issues/42981) | Regular-mode concurrency and stale workflow static data | [XBSTACK guide](https://www.xbstack.com/en/ai/self-hosted-n8n-ai-workflows/?utm_source=github&utm_medium=referral&utm_campaign=upstream_issue_watch_20261106&utm_content=problem_labs_readme) |
+| Google ADK [#7987](https://github.com/google/adk-python/issues/7987) / [#7968](https://github.com/google/adk-python/issues/7968) | Human approval must be enforced; redirects require ongoing network gate | [XBSTACK guide](https://www.xbstack.com/en/ai/ai-agent-tool-authorization-policy-gate/?utm_source=github&utm_medium=referral&utm_campaign=upstream_issue_watch_20261106&utm_content=problem_labs_readme) |
+| Google ADK [#7956](https://github.com/google/adk-python/issues/7956) / [#7977](https://github.com/google/adk-python/issues/7977) | CJK extraction and LiteLLM Gemma 4 role compatibility; issues closed, fix release not independently verified | [XBSTACK guide](https://www.xbstack.com/en/ai/ai-agent-framework-comparison/?utm_source=github&utm_medium=referral&utm_campaign=upstream_issue_watch_20261106&utm_content=problem_labs_readme) |
+
+Do not post promotional issue comments. Contribute a minimal reproduction or version matrix only after independently verifying it.
+
 ## How these labs are maintained
 
 - Reproduction evidence is separated from inference and vendor claims.
