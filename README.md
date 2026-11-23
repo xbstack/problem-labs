@@ -8,6 +8,12 @@ This repository is the GitHub-native index for XBSTACK debugging labs. Each entr
 
 > Website index: https://www.xbstack.com/github/?utm_source=github&utm_medium=referral&utm_campaign=problem_labs&utm_content=repository_readme
 
+## Supply-chain security: Microsoft Agent Framework PyPI compromise (2026-11-17)
+
+- [Read-only offline scanner and **3/3 passing synthetic tests**](repro/agent-framework-pypi-20261123/README.md) for official PyPI `agent-framework` **1.26.1/1.26.2**, both `.pth` startup-hook names, wheel metadata, copied `site-packages` and pinned requirements/lock references.
+- [GHSA-764m-3ppc-5m73](https://github.com/advisories/GHSA-764m-3ppc-5m73). **Safe boundary:** the scanner does not import, install, execute or fetch a malicious wheel or touch credential material. Synthetic indicators are not proof of actual exfiltration; absence of matches cannot certify a machine that may have run the compromised package. In an affected environment, investigate from a trusted host and rotate potentially exposed secrets.
+- [Related Agent security guidance](https://www.xbstack.com/en/ai/ai-agent-security/?utm_source=github&utm_medium=referral&utm_campaign=agent_framework_pypi_20261123&utm_content=problem_labs_repro).
+
 ## LangGraph
 
 | Problem | Reproduction | Upstream | Full analysis |
