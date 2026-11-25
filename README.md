@@ -8,6 +8,11 @@ This repository is the GitHub-native index for XBSTACK debugging labs. Each entr
 
 > Website index: https://www.xbstack.com/github/?utm_source=github&utm_medium=referral&utm_campaign=problem_labs&utm_content=repository_readme
 
+## Interactive voice agents (2026-11-25)
+
+- [Offline asynchronous task and SQLite outbox lab](repro/voice-agent-async-task-20261125/README.md): 12/12 local synthetic tests, cancellation, session scoping, durable intent and acknowledgment. No vendor API, audio or exactly-once network delivery claim.
+- [XBSTACK architecture analysis](https://www.xbstack.com/en/ai/qwen-audio-live-voice-agent/?utm_source=github&utm_medium=referral&utm_campaign=qwen_audio_live_voice_agent&utm_content=problem_labs_readme).
+
 ## Gemini / MCP tool discovery (2026-11-25)
 
 - [Gemini Tool Retrieval offline fixture](repro/gemini-tool-retrieval-20261123/README.md): 64 synthetic tool declarations, 3 permitted tools, 4/4 local tests. Compares serialized JSON bytes and application authorization boundaries, **not** model tokens, latency, billing or actual API performance.
