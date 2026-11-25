@@ -8,6 +8,11 @@ This repository is the GitHub-native index for XBSTACK debugging labs. Each entr
 
 > Website index: https://www.xbstack.com/github/?utm_source=github&utm_medium=referral&utm_campaign=problem_labs&utm_content=repository_readme
 
+## Gemini / MCP tool discovery (2026-11-25)
+
+- [Gemini Tool Retrieval offline fixture](repro/gemini-tool-retrieval-20261123/README.md): 64 synthetic tool declarations, 3 permitted tools, 4/4 local tests. Compares serialized JSON bytes and application authorization boundaries, **not** model tokens, latency, billing or actual API performance.
+- [XBSTACK engineering analysis](https://www.xbstack.com/en/ai/gemini-tool-retrieval-dynamic-mcp-tools/?utm_source=github&utm_medium=referral&utm_campaign=gemini_tool_retrieval_mcp&utm_content=problem_labs_readme).
+
 ## Supply-chain security: Microsoft Agent Framework PyPI compromise (2026-11-17)
 
 - [Read-only offline scanner and **3/3 passing synthetic tests**](repro/agent-framework-pypi-20261123/README.md) for official PyPI `agent-framework` **1.26.1/1.26.2**, both `.pth` startup-hook names, wheel metadata, copied `site-packages` and pinned requirements/lock references.
