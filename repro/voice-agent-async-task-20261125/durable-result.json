@@ -1,0 +1,13 @@
+{
+  "scope": "SQLite local synthetic ledger; close/reopen and exception rollback, not process-kill or external effects",
+  "platform": "Darwin",
+  "python": "3.10.2",
+  "sqlite": "3.35.5",
+  "tests": 6,
+  "failures": 0,
+  "errors": 0,
+  "passed": true,
+  "vendor_calls": 0,
+  "audio": false,
+  "exactly_once_network_delivery_verified": false
+}
