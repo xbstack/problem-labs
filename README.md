@@ -12,6 +12,8 @@ This repository is the GitHub-native index for XBSTACK debugging labs. Each entr
 
 - [Artifact sizes, context memory budget, and demo-version checks](repro/bonsai25-deployment-preflight-20261126/README.md): 12/12 metadata and teaching-codec assertions; independently retrieved official GGUF file lengths, derived FP16 full-attention KV payload, and checked demo source. No weight download, inference benchmark, or measured RAM claim.
 
+- [Full deployment research (EN)](https://www.xbstack.com/en/ai/ternary-bonsai-2-5-27b-local-memory-gguf-mlx/?utm_source=github&utm_medium=referral&utm_campaign=bonsai25_local_deployment&utm_content=problem_labs_readme) · [中文](https://www.xbstack.com/ai/ternary-bonsai-2-5-27b-local-memory-gguf-mlx/?utm_source=github&utm_medium=referral&utm_campaign=bonsai25_local_deployment&utm_content=problem_labs_readme).
+
 ## Agent handoff / MCP identity (2026-11-26)
 
 - [Metadata precedence and transport credential separation](repro/agent-handoff-mcp-identity-20261126/README.md): verified official wheels 0.25.0/0.26.0 (10/10 isolated source assertions), actual 0.26.0 + MCP 2.3.0 loopback handoff (6/6 assertions). Synthetic credentials only; no model API or OAuth validation.
