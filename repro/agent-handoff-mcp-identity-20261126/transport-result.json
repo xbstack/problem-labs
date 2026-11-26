@@ -1,0 +1,53 @@
+{
+  "versions": {
+    "openai-agents": "0.26.0",
+    "mcp": "2.3.0",
+    "uvicorn": "0.52.1"
+  },
+  "checkedAt": "2026-11-26T01:50:14.810461+00:00",
+  "scope": "loopback real SDK and MCP HTTP; ScriptedModel; dummy credentials; no OAuth verification or production service",
+  "cases": [
+    {
+      "separate_client_objects": false,
+      "calls": [
+        {
+          "credential_sha256": "282eaf0d3f0cf888dda3b9d497667d8cc950bf0590d184dfddb9c8a985caed7b",
+          "agent_label": "triage",
+          "tool": "read_fixture"
+        },
+        {
+          "credential_sha256": "282eaf0d3f0cf888dda3b9d497667d8cc950bf0590d184dfddb9c8a985caed7b",
+          "agent_label": "specialist",
+          "tool": "read_fixture"
+        }
+      ],
+      "assertions": {
+        "two_calls": true,
+        "actor_labels": true,
+        "credential_relation": true
+      }
+    },
+    {
+      "separate_client_objects": true,
+      "calls": [
+        {
+          "credential_sha256": "282eaf0d3f0cf888dda3b9d497667d8cc950bf0590d184dfddb9c8a985caed7b",
+          "agent_label": "triage",
+          "tool": "read_fixture"
+        },
+        {
+          "credential_sha256": "eec6e3598434bacbede9cbdca8981c845d2155146e66ab707dceb2f8b700f8b9",
+          "agent_label": "specialist",
+          "tool": "read_fixture"
+        }
+      ],
+      "assertions": {
+        "two_calls": true,
+        "actor_labels": true,
+        "credential_relation": true
+      }
+    }
+  ],
+  "passed": 6,
+  "total": 6
+}

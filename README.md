@@ -8,6 +8,11 @@ This repository is the GitHub-native index for XBSTACK debugging labs. Each entr
 
 > Website index: https://www.xbstack.com/github/?utm_source=github&utm_medium=referral&utm_campaign=problem_labs&utm_content=repository_readme
 
+## Agent handoff / MCP identity (2026-11-26)
+
+- [Metadata precedence and transport credential separation](repro/agent-handoff-mcp-identity-20261126/README.md): verified official wheels 0.25.0/0.26.0 (10/10 isolated source assertions), actual 0.26.0 + MCP 2.3.0 loopback handoff (6/6 assertions). Synthetic credentials only; no model API or OAuth validation.
+- [PR #6179](https://github.com/openai/openai-agents-python/pull/6179) and [issue #6215](https://github.com/openai/openai-agents-python/issues/6215) are distinct questions. [Policy Gate guide](https://www.xbstack.com/en/ai/ai-agent-tool-authorization-policy-gate/?utm_source=github&utm_medium=referral&utm_campaign=ai_agent_tool_authorization_policy_gate&utm_content=handoff_identity_lab).
+
 ## Interactive voice agents (2026-11-25)
 
 - [Offline asynchronous task and SQLite outbox lab](repro/voice-agent-async-task-20261125/README.md): 12/12 local synthetic tests, cancellation, session scoping, durable intent and acknowledgment. No vendor API, audio or exactly-once network delivery claim.

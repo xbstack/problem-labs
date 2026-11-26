@@ -1,0 +1,44 @@
+{
+  "scope": "isolated original MCPUtil metadata merge method extracted from verified PyPI wheels; not full SDK transport/handoff/OAuth test",
+  "python": "3.10.2",
+  "checkedAt": "2026-11-26T01:47:43.432307+00:00",
+  "versions": {
+    "0.25.0": {
+      "wheel": "openai_agents-0.25.0-py3-none-any.whl",
+      "sha256": "09a02b815842b498647749a8d9e4c101b0bd69d2a81a8f91e8ec3ac0f2c54150",
+      "source_file": "agents/mcp/util.py",
+      "source_sha256": "5f03721b2acc980b79f51f33c9b5c922b82b2755364a03919876026b3a6f6f53",
+      "function": "_merge_mcp_meta",
+      "discovery_marker_in_wheel": false,
+      "collision_result": "default",
+      "explicit_result": "explicit",
+      "tests": {
+        "discovery_collision": true,
+        "explicit_precedence": true,
+        "non_conflicting_preserved": true,
+        "empty_metadata": true,
+        "nested_copy_isolation": true
+      }
+    },
+    "0.26.0": {
+      "wheel": "openai_agents-0.26.0-py3-none-any.whl",
+      "sha256": "c3f9545035e46a5a17c88eec789e2301efe26eca230fccab0fc4a6961c0f02e1",
+      "source_file": "agents/mcp/util.py",
+      "source_sha256": "73b2095e60daf1a7ae2ab01c9ba54252c1b15385651252e97a6ab8f6cee2ee26",
+      "function": "_merge_mcp_meta",
+      "discovery_marker_in_wheel": true,
+      "collision_result": "request",
+      "explicit_result": "explicit",
+      "tests": {
+        "discovery_collision": true,
+        "explicit_precedence": true,
+        "non_conflicting_preserved": true,
+        "empty_metadata": true,
+        "nested_copy_isolation": true
+      }
+    }
+  },
+  "errors": [],
+  "passed": 10,
+  "total": 10
+}
