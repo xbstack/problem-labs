@@ -8,6 +8,10 @@ This repository is the GitHub-native index for XBSTACK debugging labs. Each entr
 
 > Website index: https://www.xbstack.com/github/?utm_source=github&utm_medium=referral&utm_campaign=problem_labs&utm_content=repository_readme
 
+## Local-first AI knowledge sync (2026-11-26 reproduction release)
+
+- [Source revisions, FTS5 and tombstones](repro/local-first-ai-sync-20261029/README.md): 7/7 Node and 8/8 in-memory SQLite synthetic tests; offline deletion limits preserved. No real-device or encryption claim. [Full analysis](https://www.xbstack.com/en/ai/local-first-ai-knowledge-sync/?utm_source=github&utm_medium=referral&utm_campaign=local_first_ai_sync&utm_content=problem_labs_readme) · [中文](https://www.xbstack.com/ai/local-first-ai-knowledge-sync/?utm_source=github&utm_medium=referral&utm_campaign=local_first_ai_sync&utm_content=problem_labs_readme).
+
 ## Bonsai 2.5 27B deployment preflight (2026-11-26)
 
 - [Artifact sizes, context memory budget, and demo-version checks](repro/bonsai25-deployment-preflight-20261126/README.md): 12/12 metadata and teaching-codec assertions; independently retrieved official GGUF file lengths, derived FP16 full-attention KV payload, and checked demo source. No weight download, inference benchmark, or measured RAM claim.

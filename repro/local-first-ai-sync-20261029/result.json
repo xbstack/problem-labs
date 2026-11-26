@@ -1,0 +1,29 @@
+{
+  "recordedAt": "2026-11-26T06:42:19.800688+00:00",
+  "originalTestDate": "2026-10-29",
+  "scope": "Synthetic in-process source sync and SQLite FTS5; no real network or product integration.",
+  "nodeVersion": "v22.18.0",
+  "pythonVersion": "Python 3.10.2",
+  "sqliteVersion": "3.35.5",
+  "node": {
+    "passed": 7,
+    "failed": 0
+  },
+  "sqlite": {
+    "passed": 8,
+    "failed": 0
+  },
+  "totalTestCases": 15,
+  "overlappingAssertions": true,
+  "files": {
+    "repro.mjs": {
+      "originalSha256": "45ea28bf61e23e245c6adbea5fa19cfc37737afae2418a3e27caa198c75f7d47",
+      "publicSha256": "45ea28bf61e23e245c6adbea5fa19cfc37737afae2418a3e27caa198c75f7d47"
+    },
+    "sqlite_fts5_repro.py": {
+      "originalSha256": "412622367e2f31efcb10fc868940f936b3858f95352360ae7873eb37122f0621",
+      "publicSha256": "8319922bcc6d8c4a35a9840c9d3cdf4926a5126612705f987057fb19bb43f32f"
+    }
+  },
+  "note": "Only public Python docstring brand spelling updated; algorithm unchanged. Test counts describe separate suites, not fifteen independent security properties."
+}
