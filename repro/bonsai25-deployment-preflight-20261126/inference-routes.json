@@ -1,0 +1,35 @@
+{
+  "checkedAt": "2026-11-26T02:30:26.696057+00:00",
+  "readOnly": true,
+  "inferenceCalls": 0,
+  "checks": {
+    "exact_space_search": {
+      "url": "https://huggingface.co/api/spaces?search=bonsai-2.5&limit=30",
+      "http": 200,
+      "bytesRead": 2,
+      "spaces": []
+    },
+    "mlx_provider_mapping": {
+      "url": "https://huggingface.co/api/models/prism-ml/Ternary-Bonsai-2.5-27B-mlx-2bit?expand=inferenceProviderMapping",
+      "http": 200,
+      "bytesRead": 112,
+      "providers": {}
+    },
+    "official_older_hosted_demo": {
+      "url": "https://huggingface.co/spaces/prism-ml/Ternary-Bonsai-27B-Demo/raw/main/app.py",
+      "http": 200,
+      "bytesRead": 11411,
+      "modelIds": [
+        "prism-ml/Ternary-Bonsai-27B-gguf"
+      ]
+    },
+    "local_ollama": {
+      "url": "http://127.0.0.1:11434/api/tags",
+      "errorType": "URLError"
+    },
+    "local_lm_studio": {
+      "url": "http://127.0.0.1:1234/v1/models",
+      "errorType": "URLError"
+    }
+  }
+}

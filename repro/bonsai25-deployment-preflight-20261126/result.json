@@ -1,0 +1,387 @@
+{
+  "checkedAt": "2026-11-26T02:29:37.529519+00:00",
+  "scope": "public artifact metadata and synthetic codec arithmetic only; no model inference, no performance/accuracy benchmark",
+  "repo": "prism-ml/Ternary-Bonsai-2.5-27B-GGUF",
+  "revision": "28a7093cc25bc151cc2b284c5570f12ce343fdcf",
+  "files": [
+    {
+      "name": "Ternary-Bonsai-2.5-27B-PQ2_0-mtp.gguf",
+      "bytes": 7492338944,
+      "sha256": "ededc9fc0a8a6a8dd30914d107b2d2ce7674d789f1d05a1a481f240609aa6c23"
+    },
+    {
+      "name": "Ternary-Bonsai-2.5-27B-PQ2_0.gguf",
+      "bytes": 7253354848,
+      "sha256": "103a11c94324029d8bae3f8152f30bba414730064cfb77438f8589db72e1aa85"
+    },
+    {
+      "name": "Ternary-Bonsai-2.5-27B-PTQ1_0-mtp.gguf",
+      "bytes": 6232818944,
+      "sha256": "e0fc5f3d47b9c926d52677d303b19df356a2376614b3e1cb9973865fc04ca431"
+    },
+    {
+      "name": "Ternary-Bonsai-2.5-27B-PTQ1_0.gguf",
+      "bytes": 5993834848,
+      "sha256": "929560ec9d37cf3cadd4b00cc87b51c570082a628dd830b4692dc0b2ed18dbbe"
+    },
+    {
+      "name": "Ternary-Bonsai-2.5-27B-Q2_0-mtp.gguf",
+      "bytes": 7912178944,
+      "sha256": "b0f83de8481c3200c529aef5fb495dbfedf2a4a3f017f7a3ea0a69c67be1d306"
+    },
+    {
+      "name": "Ternary-Bonsai-2.5-27B-Q2_0.gguf",
+      "bytes": 7673194848,
+      "sha256": "84496171ca79d4d33fb45612a2afd8303ec494baf916281023b7dc9cb3b3b9fa"
+    },
+    {
+      "name": "Ternary-Bonsai-2.5-27B-mmproj-BF16.gguf",
+      "bytes": 931145856,
+      "sha256": "e287342d92332fa3577ed1d42e921dac9370c08da58ba9337fa450f6cc76cfd7"
+    },
+    {
+      "name": "Ternary-Bonsai-2.5-27B-mmproj-Q8_0.gguf",
+      "bytes": 629246976,
+      "sha256": "6807ede61d570bb86ba34b756a0fa109edc33668604de867c6ea6d8f1d631903"
+    }
+  ],
+  "baseConfigFields": {
+    "num_hidden_layers": 64,
+    "num_attention_heads": 24,
+    "num_key_value_heads": 4,
+    "head_dim": 256,
+    "hidden_size": 5120,
+    "max_position_embeddings": 262144,
+    "full_attention_interval": 4,
+    "layer_types": [
+      "linear_attention",
+      "linear_attention",
+      "linear_attention",
+      "full_attention",
+      "linear_attention",
+      "linear_attention",
+      "linear_attention",
+      "full_attention",
+      "linear_attention",
+      "linear_attention",
+      "linear_attention",
+      "full_attention",
+      "linear_attention",
+      "linear_attention",
+      "linear_attention",
+      "full_attention",
+      "linear_attention",
+      "linear_attention",
+      "linear_attention",
+      "full_attention",
+      "linear_attention",
+      "linear_attention",
+      "linear_attention",
+      "full_attention",
+      "linear_attention",
+      "linear_attention",
+      "linear_attention",
+      "full_attention",
+      "linear_attention",
+      "linear_attention",
+      "linear_attention",
+      "full_attention",
+      "linear_attention",
+      "linear_attention",
+      "linear_attention",
+      "full_attention",
+      "linear_attention",
+      "linear_attention",
+      "linear_attention",
+      "full_attention",
+      "linear_attention",
+      "linear_attention",
+      "linear_attention",
+      "full_attention",
+      "linear_attention",
+      "linear_attention",
+      "linear_attention",
+      "full_attention",
+      "linear_attention",
+      "linear_attention",
+      "linear_attention",
+      "full_attention",
+      "linear_attention",
+      "linear_attention",
+      "linear_attention",
+      "full_attention",
+      "linear_attention",
+      "linear_attention",
+      "linear_attention",
+      "full_attention",
+      "linear_attention",
+      "linear_attention",
+      "linear_attention",
+      "full_attention"
+    ]
+  },
+  "fullAttentionLayers": 16,
+  "fp16FullAttentionKVOnly": [
+    {
+      "tokens": 4096,
+      "bytes": 268435456,
+      "GiB": 0.25
+    },
+    {
+      "tokens": 8192,
+      "bytes": 536870912,
+      "GiB": 0.5
+    },
+    {
+      "tokens": 32768,
+      "bytes": 2147483648,
+      "GiB": 2.0
+    },
+    {
+      "tokens": 131072,
+      "bytes": 8589934592,
+      "GiB": 8.0
+    },
+    {
+      "tokens": 262144,
+      "bytes": 17179869184,
+      "GiB": 16.0
+    }
+  ],
+  "providerMapping": {},
+  "spaceCandidates": [
+    {
+      "id": "webml-community/ternary-bonsai-2-webgpu-kernels",
+      "sdk": "static"
+    },
+    {
+      "id": "webml-community/bonsai-ternary-webgpu",
+      "sdk": "static"
+    },
+    {
+      "id": "developerjeremylive/bonsai-ternary-webgpu-etheroi",
+      "sdk": "static"
+    },
+    {
+      "id": "sugatoray/bonsai-ternary-webgpu",
+      "sdk": "static"
+    },
+    {
+      "id": "rajaai1/bonsai-ternary-webgpu",
+      "sdk": "static"
+    },
+    {
+      "id": "riyadshuvro/bonsai-ternary-webgpu",
+      "sdk": "static"
+    },
+    {
+      "id": "ZENLLC/bonsai-ternary-webgpu",
+      "sdk": "static"
+    },
+    {
+      "id": "van7467/bonsai-ternary-webgpu",
+      "sdk": "static"
+    },
+    {
+      "id": "RobinsAIWorld/bonsai-ternary-webgpu",
+      "sdk": "static"
+    },
+    {
+      "id": "spwotton/bonsai-ternary-webgpu",
+      "sdk": "static"
+    },
+    {
+      "id": "assafvayner/Ternary-Bonsai",
+      "sdk": "static"
+    },
+    {
+      "id": "Supbatomic/bonsai-ternary-webgpu",
+      "sdk": "static"
+    },
+    {
+      "id": "s-a-nair/Bonsai-Ternary-8B-CPU",
+      "sdk": "docker"
+    },
+    {
+      "id": "akhaliq/Ternary-Bonsai-27B",
+      "sdk": "gradio"
+    },
+    {
+      "id": "prism-ml/Ternary-Bonsai-27B-Demo",
+      "sdk": "gradio"
+    },
+    {
+      "id": "Hoandgskalak/prism-ml-Ternary-Bonsai-27B-gguf",
+      "sdk": "static"
+    },
+    {
+      "id": "aishlai/prism-ml-Ternary-Bonsai-27B-gguf",
+      "sdk": "gradio"
+    },
+    {
+      "id": "Fazayi/prism-ml-Ternary-Bonsai-27B-gguf",
+      "sdk": "static"
+    },
+    {
+      "id": "Existentialist/prism-ml-Ternary-Bonsai-27B-gguf",
+      "sdk": "static"
+    },
+    {
+      "id": "Shakespril/prism-ml-Ternary-Bonsai-27B-gguf",
+      "sdk": "gradio"
+    },
+    {
+      "id": "Sasikumar2099/prism-ml-Ternary-Bonsai-27B-gguf",
+      "sdk": "gradio"
+    },
+    {
+      "id": "himansu7494/prism-ml-Ternary-Bonsai-27B-gguf",
+      "sdk": "static"
+    },
+    {
+      "id": "roxanavin/prism-ml-Ternary-Bonsai-27B-gguf",
+      "sdk": "static"
+    },
+    {
+      "id": "litert-community/bonsai-image-ternary-4b-litert",
+      "sdk": "gradio"
+    },
+    {
+      "id": "localellm/WebGPU-Ternary-Bonsai-2-27B-gguf",
+      "sdk": "static"
+    },
+    {
+      "id": "developerjeremylive/ternary-bonsai-2-webgpu-kernels-etheroi",
+      "sdk": "static"
+    },
+    {
+      "id": "bananamort/Ternary-Bonsai-2-27B",
+      "sdk": "gradio"
+    },
+    {
+      "id": "osolmaz/bonsai2-27b-ternary-serve",
+      "sdk": "docker"
+    },
+    {
+      "id": "charingxe/ternary-bonsai-2-weight-explorer",
+      "sdk": "static"
+    },
+    {
+      "id": "mimer50K/ternary-bonsai-2-webgpu-kernels",
+      "sdk": "static"
+    },
+    {
+      "id": "protobutter/ternary-bonsai-2-webgpu-kernels",
+      "sdk": "static"
+    },
+    {
+      "id": "atrezonator/ternary-bonsai-2-webgpu-kernels",
+      "sdk": "static"
+    },
+    {
+      "id": "VDD63/Ternary-Bonsai-2-27B",
+      "sdk": "gradio"
+    },
+    {
+      "id": "webml-community/ternary-bonsai-2-hermes-webgpu",
+      "sdk": "static"
+    },
+    {
+      "id": "localellm/WebGPU-Ternary-Bonsai-2-4B",
+      "sdk": "static"
+    },
+    {
+      "id": "localellm/WebGPU-Ternary-Bonsai-2-9B",
+      "sdk": "static"
+    },
+    {
+      "id": "Cheurteen/ternary-bonsai-lessons",
+      "sdk": "static"
+    },
+    {
+      "id": "nikos65535/ternary-bonsai-27b-webgpu",
+      "sdk": "static"
+    },
+    {
+      "id": "iince98/ternary-bonsai-chat",
+      "sdk": "gradio"
+    }
+  ],
+  "demo": {
+    "modelIds": [
+      "prism-ml/Ternary-Bonsai-2-27B-gguf"
+    ],
+    "mentionsBonsai25": false,
+    "webgpu": true,
+    "browserLocalLoading": true,
+    "sourceUrl": "https://huggingface.co/spaces/webml-community/ternary-bonsai-2-webgpu-kernels/raw/main/index.html"
+  },
+  "mlxRepos": [
+    "prism-ml/Ternary-Bonsai-2.5-27B-mlx-2bit"
+  ],
+  "receipts": {
+    "model": {
+      "url": "https://huggingface.co/api/models/prism-ml/Ternary-Bonsai-2.5-27B-GGUF?blobs=true",
+      "http": 200,
+      "bytesRead": 13583,
+      "sha256": "a4c88dbc3f3a004b2723e163081337cc17d85d33e134f95223a772937fe304f3"
+    },
+    "tree": {
+      "url": "https://huggingface.co/api/models/prism-ml/Ternary-Bonsai-2.5-27B-GGUF/tree/main?recursive=false&expand=false",
+      "http": 200,
+      "bytesRead": 3161,
+      "sha256": "5bf7a42e5fcdcb2730d88a44e10ccacfa4c098f793014431c3414d34a45550ff"
+    },
+    "providers": {
+      "url": "https://huggingface.co/api/models/prism-ml/Ternary-Bonsai-2.5-27B-GGUF?expand=inferenceProviderMapping",
+      "http": 200,
+      "bytesRead": 108,
+      "sha256": "dd17e14740068cd82448ae30697e0d70d9dd59b5d1dd2b3335420d43a542e1b7"
+    },
+    "mlx_search": {
+      "url": "https://huggingface.co/api/models?author=prism-ml&search=Ternary-Bonsai-2.5-27B&limit=20",
+      "http": 200,
+      "bytesRead": 1163,
+      "sha256": "5f5615a05d7e298d55e16a6dc2c109498ffa8772114adc688a66747f3bac0ba5"
+    },
+    "spaces_search": {
+      "url": "https://huggingface.co/api/spaces?search=ternary-bonsai&limit=40",
+      "http": 200,
+      "bytesRead": 8135,
+      "sha256": "945c1ca3a8be0c94dfad991d7cd14458b317f24b57ade594f25879554335dcbd"
+    },
+    "demo": {
+      "url": "https://huggingface.co/spaces/webml-community/ternary-bonsai-2-webgpu-kernels/raw/main/index.html",
+      "http": 200,
+      "bytesRead": 1553969,
+      "sha256": "4422addfa476ebd81195a77cd259038c4c5d56c87fc053c2387de02e065f1918"
+    },
+    "base_config": {
+      "url": "https://huggingface.co/Qwen/Qwen3.8-27B/raw/main/config.json",
+      "http": 200,
+      "bytesRead": 4312,
+      "sha256": "191e0af232104ed8b65258cf3fb2b842e288008baca7633c11b82a1ac7203aab"
+    }
+  },
+  "tests": {
+    "five_trits_fit_one_byte": true,
+    "243_ternary_groups_roundtrip": true,
+    "243_unique_codes": true,
+    "group_128_scale_overhead": true,
+    "dense_128_padded_bytes": true,
+    "dense_group_bits": true,
+    "two_bit_group_bits": true,
+    "one_gib_bytes": true,
+    "three_real_packings_present": true,
+    "ptq_smaller_than_pq_and_q2": true,
+    "mtp_larger_than_base": true,
+    "vision_separate": true
+  },
+  "passed": 12,
+  "total": 12,
+  "fullWeightsDownloadedBytes": 0,
+  "installedDependencies": 0,
+  "paidCalls": 0,
+  "inferenceCalls": 0,
+  "python": "3.10.2"
+}
