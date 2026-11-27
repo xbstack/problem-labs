@@ -1,0 +1,9 @@
+# Structured output failure and retry boundary
+
+November 27, 2026 · Node.js 22.18.0 · zero external dependencies.
+
+Run `node repro.mjs`. The fixture is synthetic and contains no actual model prompt, customer record, provider key or API endpoint. It distinguishes invalid model JSON, schema/semantic mismatch and a malformed response after a simulated non-idempotent remote operation. Twelve assertions check the observed boundaries. The naive policy creates two mock effects; the guarded policy creates one and refuses another submission until an existing task is reconciled. A duplicate-key example also demonstrates that a successful JSON.parse is not a guarantee of unique keys.
+
+The local file marker is flushed before a mock submission. This demonstration is single-process and is not proof of power-loss durability, distributed concurrency, exactly-once delivery, model output quality, provider billing, or the behavior of a specific third-party SDK. A real reconciler must verify account, job, payload and provider identity; the fixture has one synthetic job and an in-memory provider list. Never interpret missing remote ID or HTTP 500 as proof that a billable operation did not happen.
+
+See `result.json` for the recorded run. Related engineering context: [Agent tool authorization](https://www.xbstack.com/en/ai/ai-agent-tool-authorization-policy-gate/?utm_source=github&utm_medium=referral&utm_campaign=structured-output-retry-boundary-20261127&utm_content=lab_readme_en) and [Chinese version](https://www.xbstack.com/ai/ai-agent-tool-authorization-policy-gate/?utm_source=github&utm_medium=referral&utm_campaign=structured-output-retry-boundary-20261127&utm_content=lab_readme_zh). The website links are related architecture reading, not a claim that a new structured-output article has been published.

@@ -1,0 +1,59 @@
+{
+  "node": "v22.18.0",
+  "checks": [
+    {
+      "name": "synthetic V8 offset 3003",
+      "pass": true
+    },
+    {
+      "name": "valid syntax can silently contain duplicate keys",
+      "pass": true
+    },
+    {
+      "name": "truncated JSON is not a complete response",
+      "pass": true
+    },
+    {
+      "name": "wrong task envelope rejected",
+      "pass": true
+    },
+    {
+      "name": "valid storyboard accepted",
+      "pass": true
+    },
+    {
+      "name": "syntactically valid wrong scene count rejected",
+      "pass": true
+    },
+    {
+      "name": "syntactically valid inconsistent narration rejected",
+      "pass": true
+    },
+    {
+      "name": "naive retry duplicates remote effects after lost response",
+      "pass": true
+    },
+    {
+      "name": "durable marker freezes unknown outcome across fresh reads",
+      "pass": true
+    },
+    {
+      "name": "changed payload cannot clear existing submission",
+      "pass": true
+    },
+    {
+      "name": "reconciliation rejects missing remote identity",
+      "pass": true
+    },
+    {
+      "name": "reconcile known original identity without another submission",
+      "pass": true
+    }
+  ],
+  "passed": 12,
+  "scope": "synthetic single-process local file journal and in-memory mock service; not production, no network, no actual cost, not a crash-consistency or concurrency proof",
+  "observations": {
+    "naiveRemoteEffects": 2,
+    "guardedRemoteEffects": 1
+  }
+}

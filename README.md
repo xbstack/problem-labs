@@ -106,3 +106,5 @@ Do not post promotional issue comments. Contribute a minimal reproduction or ver
 ## Search terms covered
 
 LangGraph `aupdate_state` Ambiguous update · LangGraph `Command(resume=dict)` interrupt-map misclassification · LangGraph max_concurrency ignored · LangGraph SQLite partial commit · LangGraph first durable checkpoint · accepted run lost · `EmptyInputError` recovery · n8n `$json` Array null · n8n Raw Body stream · n8n ARM64 GLIBC_PRIVATE · OpenAI Responses No tool call found · OpenAI Agents RunState approval resume · MCP StreamableHTTPClientTransport SSE pending timeout · MCP -32700 Parse Error · AI SDK WorkflowAgent signed approval · AI SDK 7 migration
+
+- [Structured output and safe retry boundary](repro/structured-output-retry-boundary-20261127/README.md) — 12 synthetic Node.js assertions; malformed JSON, schema/semantic validation and mock duplicate remote effects. No external API or charges.
