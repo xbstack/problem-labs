@@ -1,0 +1,250 @@
+{
+  "scope": "real installed Pydantic AI/Harness, scripted FunctionModel, synthetic dependent tool chain and injected delays; not real model inference or Pax-vs-other-harness benchmark",
+  "network_bind_denied": true,
+  "python": "3.11.15",
+  "platform": "macOS-27.0.1-arm64-arm-64bit",
+  "versions": {
+    "pydantic-ai-pax": "0.75.0",
+    "pydantic-ai-harness": "0.75.0",
+    "pydantic-ai-slim": "2.75.0",
+    "pydantic-monty": "1.7.0"
+  },
+  "rows": [
+    {
+      "mode": "native",
+      "steps": 3,
+      "injected_delay_ms": 0,
+      "repetitions": 5,
+      "median_ms": 6.76,
+      "min_ms": 6.04,
+      "max_ms": 7.31,
+      "scripted_requests": 4,
+      "tool_calls": 3,
+      "accepted": 5,
+      "samples_ms": [
+        7.24,
+        6.47,
+        7.31,
+        6.04,
+        6.76
+      ]
+    },
+    {
+      "mode": "code",
+      "steps": 3,
+      "injected_delay_ms": 0,
+      "repetitions": 5,
+      "median_ms": 22.44,
+      "min_ms": 21.63,
+      "max_ms": 23.35,
+      "scripted_requests": 2,
+      "tool_calls": 3,
+      "accepted": 5,
+      "samples_ms": [
+        22.58,
+        21.63,
+        22.09,
+        23.35,
+        22.44
+      ]
+    },
+    {
+      "mode": "native",
+      "steps": 10,
+      "injected_delay_ms": 0,
+      "repetitions": 5,
+      "median_ms": 15.37,
+      "min_ms": 14.16,
+      "max_ms": 44.6,
+      "scripted_requests": 11,
+      "tool_calls": 10,
+      "accepted": 5,
+      "samples_ms": [
+        14.97,
+        15.37,
+        44.6,
+        14.16,
+        17.74
+      ]
+    },
+    {
+      "mode": "code",
+      "steps": 10,
+      "injected_delay_ms": 0,
+      "repetitions": 5,
+      "median_ms": 25.43,
+      "min_ms": 24.65,
+      "max_ms": 26.72,
+      "scripted_requests": 2,
+      "tool_calls": 10,
+      "accepted": 5,
+      "samples_ms": [
+        26.72,
+        25.2,
+        25.43,
+        24.65,
+        26.07
+      ]
+    },
+    {
+      "mode": "native",
+      "steps": 3,
+      "injected_delay_ms": 25.0,
+      "repetitions": 5,
+      "median_ms": 131.35,
+      "min_ms": 119.33,
+      "max_ms": 143.3,
+      "scripted_requests": 4,
+      "tool_calls": 3,
+      "accepted": 5,
+      "samples_ms": [
+        119.33,
+        143.3,
+        131.23,
+        131.35,
+        132.91
+      ]
+    },
+    {
+      "mode": "code",
+      "steps": 3,
+      "injected_delay_ms": 25.0,
+      "repetitions": 5,
+      "median_ms": 81.67,
+      "min_ms": 77.73,
+      "max_ms": 88.14,
+      "scripted_requests": 2,
+      "tool_calls": 3,
+      "accepted": 5,
+      "samples_ms": [
+        84.91,
+        78.58,
+        77.73,
+        88.14,
+        81.67
+      ]
+    },
+    {
+      "mode": "native",
+      "steps": 10,
+      "injected_delay_ms": 25.0,
+      "repetitions": 5,
+      "median_ms": 365.35,
+      "min_ms": 359.98,
+      "max_ms": 384.22,
+      "scripted_requests": 11,
+      "tool_calls": 10,
+      "accepted": 5,
+      "samples_ms": [
+        370.68,
+        359.98,
+        384.22,
+        365.35,
+        362.3
+      ]
+    },
+    {
+      "mode": "code",
+      "steps": 10,
+      "injected_delay_ms": 25.0,
+      "repetitions": 5,
+      "median_ms": 92.1,
+      "min_ms": 80.32,
+      "max_ms": 107.22,
+      "scripted_requests": 2,
+      "tool_calls": 10,
+      "accepted": 5,
+      "samples_ms": [
+        107.22,
+        80.32,
+        85.32,
+        98.76,
+        92.1
+      ]
+    },
+    {
+      "mode": "native",
+      "steps": 3,
+      "injected_delay_ms": 100.0,
+      "repetitions": 5,
+      "median_ms": 436.72,
+      "min_ms": 434.91,
+      "max_ms": 443.33,
+      "scripted_requests": 4,
+      "tool_calls": 3,
+      "accepted": 5,
+      "samples_ms": [
+        436.72,
+        443.33,
+        435.83,
+        439.42,
+        434.91
+      ]
+    },
+    {
+      "mode": "code",
+      "steps": 3,
+      "injected_delay_ms": 100.0,
+      "repetitions": 5,
+      "median_ms": 270.19,
+      "min_ms": 264.58,
+      "max_ms": 275.09,
+      "scripted_requests": 2,
+      "tool_calls": 3,
+      "accepted": 5,
+      "samples_ms": [
+        270.11,
+        275.09,
+        264.58,
+        272.19,
+        270.19
+      ]
+    },
+    {
+      "mode": "native",
+      "steps": 10,
+      "injected_delay_ms": 100.0,
+      "repetitions": 5,
+      "median_ms": 1211.23,
+      "min_ms": 1194.3,
+      "max_ms": 1219.8,
+      "scripted_requests": 11,
+      "tool_calls": 10,
+      "accepted": 5,
+      "samples_ms": [
+        1219.8,
+        1211.23,
+        1218.29,
+        1194.3,
+        1203.35
+      ]
+    },
+    {
+      "mode": "code",
+      "steps": 10,
+      "injected_delay_ms": 100.0,
+      "repetitions": 5,
+      "median_ms": 270.52,
+      "min_ms": 266.81,
+      "max_ms": 299.03,
+      "scripted_requests": 2,
+      "tool_calls": 10,
+      "accepted": 5,
+      "samples_ms": [
+        267.25,
+        275.23,
+        266.81,
+        270.52,
+        299.03
+      ]
+    }
+  ],
+  "measured_runs": 60,
+  "warmups": 12,
+  "paid_model_calls": 0,
+  "peak_process_rss_raw": 195690496,
+  "cli_help_exit": 0,
+  "cli_help_mentions_pax": true,
+  "machine": "Apple M1 Pro / 10 CPU cores / 16 GiB unified memory",
+  "environment_cleanup": "TemporaryDirectory removed after execution"
+}

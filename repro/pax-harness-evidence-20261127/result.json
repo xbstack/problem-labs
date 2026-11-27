@@ -1,0 +1,828 @@
+{
+  "cutoff": "2026-11-27",
+  "checked_at": "2026-11-27T03:45:14.165920+00:00",
+  "python": "3.11.15",
+  "platform": "macOS-27.0.1-arm64-arm-64bit",
+  "scope": "read-only wheel AST and vendor-published aggregate arithmetic; one illustrative synthetic calculation; no Pax runtime or provider calls",
+  "source": "https://pydantic.dev/articles/pax-harness-beta",
+  "packages": [
+    {
+      "package": "pydantic-ai-pax",
+      "version": "0.75.0",
+      "sha256": "5ddb05f11be38a0139258f31a5c002e34f0d84b3ee89e6d0b881c8ebb410e492",
+      "wheel": "pydantic_ai_pax-0.75.0-py3-none-any.whl",
+      "python_files": 255,
+      "python_requirement": ">=3.11",
+      "dependencies": [
+        "pydantic-ai-harness[coder,skills]==0.75.0",
+        "pydantic-ai-slim[anthropic,mcp,openai]==2.75.0"
+      ]
+    },
+    {
+      "package": "pydantic-ai-harness",
+      "version": "0.75.0",
+      "sha256": "f8b0444375ee74d05660d3ce200face6b681c94a6356918a57daa8903c3ce6bd",
+      "wheel": "pydantic_ai_harness-0.75.0-py3-none-any.whl",
+      "python_files": 441,
+      "python_requirement": ">=3.11",
+      "dependencies": [
+        "pydantic-ai-slim==2.75.0"
+      ]
+    },
+    {
+      "package": "pydantic-ai-slim",
+      "version": "2.75.0",
+      "sha256": "eb51d50faf201ea63c8a0243523e21286d535c5cbc956628d6a3eac4afbf429f",
+      "wheel": "pydantic_ai_slim-2.75.0-py3-none-any.whl",
+      "python_files": 483,
+      "python_requirement": ">=3.11",
+      "dependencies": []
+    }
+  ],
+  "benchmark": {
+    "harnesses": [
+      "Pax",
+      "OpenCode",
+      "pi",
+      "deepagents-code",
+      "Codex",
+      "Claude Code"
+    ],
+    "rows": [
+      [
+        "GPT-6 Luna",
+        [
+          55.1,
+          57.2,
+          53.3,
+          55.1,
+          56.0,
+          null
+        ],
+        [
+          0.77,
+          0.69,
+          0.57,
+          1.08,
+          1.04,
+          null
+        ]
+      ],
+      [
+        "GPT-6.1 Terra",
+        [
+          54.1,
+          54.7,
+          57.2,
+          51.4,
+          54.2,
+          null
+        ],
+        [
+          4.97,
+          5.41,
+          3.97,
+          13.79,
+          6.36,
+          null
+        ]
+      ],
+      [
+        "Claude Haiku 5.5",
+        [
+          56.0,
+          55.5,
+          52.9,
+          59.1,
+          null,
+          56.5
+        ],
+        [
+          1.46,
+          1.5,
+          1.2,
+          1.34,
+          null,
+          1.37
+        ]
+      ],
+      [
+        "Claude Sonnet 5.5",
+        [
+          58.4,
+          60.8,
+          57.9,
+          57.7,
+          null,
+          56.9
+        ],
+        [
+          7.9,
+          7.43,
+          6.54,
+          7.9,
+          null,
+          6.86
+        ]
+      ],
+      [
+        "MiniMax M3.1 Flash",
+        [
+          54.7,
+          50.8,
+          52.3,
+          50.7,
+          54.7,
+          38.6
+        ],
+        [
+          1.67,
+          2.94,
+          1.4,
+          2.92,
+          1.85,
+          2.95
+        ]
+      ],
+      [
+        "Kimi K3.1 Pro",
+        [
+          63.7,
+          64.3,
+          59.1,
+          61.5,
+          61.8,
+          62.9
+        ],
+        [
+          10.92,
+          9.81,
+          9.44,
+          11.88,
+          14.42,
+          11.4
+        ]
+      ],
+      [
+        "GPT-6.2 Sol",
+        [
+          64.7,
+          61.0,
+          64.8,
+          61.7,
+          60.1,
+          null
+        ],
+        [
+          9.21,
+          9.17,
+          7.69,
+          12.98,
+          21.05,
+          null
+        ]
+      ],
+      [
+        "Claude Opus 5.5",
+        [
+          61.2,
+          61.4,
+          61.1,
+          63.3,
+          null,
+          60.4
+        ],
+        [
+          24.61,
+          27.33,
+          20.96,
+          23.51,
+          null,
+          25.1
+        ]
+      ]
+    ],
+    "mean_four_complete": {
+      "Pax": {
+        "score": 58.487500000000004,
+        "usd": 7.68875
+      },
+      "OpenCode": {
+        "score": 58.2125,
+        "usd": 8.035
+      },
+      "pi": {
+        "score": 57.325,
+        "usd": 6.47125
+      },
+      "deepagents-code": {
+        "score": 57.5625,
+        "usd": 9.425
+      }
+    },
+    "per_model": [
+      {
+        "model": "GPT-6 Luna",
+        "highest_score": [
+          "OpenCode"
+        ],
+        "lowest_cost": [
+          "pi"
+        ],
+        "pareto": [
+          "OpenCode",
+          "pi"
+        ]
+      },
+      {
+        "model": "GPT-6.1 Terra",
+        "highest_score": [
+          "pi"
+        ],
+        "lowest_cost": [
+          "pi"
+        ],
+        "pareto": [
+          "pi"
+        ]
+      },
+      {
+        "model": "Claude Haiku 5.5",
+        "highest_score": [
+          "deepagents-code"
+        ],
+        "lowest_cost": [
+          "pi"
+        ],
+        "pareto": [
+          "pi",
+          "deepagents-code"
+        ]
+      },
+      {
+        "model": "Claude Sonnet 5.5",
+        "highest_score": [
+          "OpenCode"
+        ],
+        "lowest_cost": [
+          "pi"
+        ],
+        "pareto": [
+          "OpenCode",
+          "pi"
+        ]
+      },
+      {
+        "model": "MiniMax M3.1 Flash",
+        "highest_score": [
+          "Pax",
+          "Codex"
+        ],
+        "lowest_cost": [
+          "pi"
+        ],
+        "pareto": [
+          "Pax",
+          "pi"
+        ]
+      },
+      {
+        "model": "Kimi K3.1 Pro",
+        "highest_score": [
+          "OpenCode"
+        ],
+        "lowest_cost": [
+          "pi"
+        ],
+        "pareto": [
+          "OpenCode",
+          "pi"
+        ]
+      },
+      {
+        "model": "GPT-6.2 Sol",
+        "highest_score": [
+          "pi"
+        ],
+        "lowest_cost": [
+          "pi"
+        ],
+        "pareto": [
+          "pi"
+        ]
+      },
+      {
+        "model": "Claude Opus 5.5",
+        "highest_score": [
+          "deepagents-code"
+        ],
+        "lowest_cost": [
+          "pi"
+        ],
+        "pareto": [
+          "pi",
+          "deepagents-code"
+        ]
+      }
+    ],
+    "sensitivity": {
+      "sol_cost_reduction_percent": 56.247030878859846,
+      "opus_cost_reduction_percent": 1.9521912350597688,
+      "sol_relaxed_gap": 4.6,
+      "sol_stock_gap": 1.2,
+      "opus_relaxed_gap": 0.8,
+      "opus_stock_gap": 1.4
+    }
+  },
+  "checks": [
+    {
+      "name": "01 pinned wheel digests and versions",
+      "status": "PASS",
+      "evidence": [
+        {
+          "package": "pydantic-ai-pax",
+          "version": "0.75.0",
+          "sha256": "5ddb05f11be38a0139258f31a5c002e34f0d84b3ee89e6d0b881c8ebb410e492",
+          "wheel": "pydantic_ai_pax-0.75.0-py3-none-any.whl",
+          "python_files": 255,
+          "python_requirement": ">=3.11",
+          "dependencies": [
+            "pydantic-ai-harness[coder,skills]==0.75.0",
+            "pydantic-ai-slim[anthropic,mcp,openai]==2.75.0"
+          ]
+        },
+        {
+          "package": "pydantic-ai-harness",
+          "version": "0.75.0",
+          "sha256": "f8b0444375ee74d05660d3ce200face6b681c94a6356918a57daa8903c3ce6bd",
+          "wheel": "pydantic_ai_harness-0.75.0-py3-none-any.whl",
+          "python_files": 441,
+          "python_requirement": ">=3.11",
+          "dependencies": [
+            "pydantic-ai-slim==2.75.0"
+          ]
+        },
+        {
+          "package": "pydantic-ai-slim",
+          "version": "2.75.0",
+          "sha256": "eb51d50faf201ea63c8a0243523e21286d535c5cbc956628d6a3eac4afbf429f",
+          "wheel": "pydantic_ai_slim-2.75.0-py3-none-any.whl",
+          "python_files": 483,
+          "python_requirement": ">=3.11",
+          "dependencies": []
+        }
+      ]
+    },
+    {
+      "name": "02 package coupling",
+      "status": "PASS",
+      "evidence": [
+        [
+          "pydantic-ai-harness[coder,skills]==0.75.0",
+          "pydantic-ai-slim[anthropic,mcp,openai]==2.75.0"
+        ],
+        [
+          "pydantic-ai-slim==2.75.0"
+        ],
+        []
+      ]
+    },
+    {
+      "name": "03 console aliases",
+      "status": "PASS",
+      "evidence": "[console_scripts]\npax = pydantic_ai_pax.__main__:main\npydantic-ai-pax = pydantic_ai_pax.__main__:main\n"
+    },
+    {
+      "name": "04 plugin versus SDK composition",
+      "status": "PASS",
+      "evidence": {
+        "pydantic_ai_pax/builtin_plugins/coder.py": [
+          "DelegateModel",
+          "_expand_home",
+          "CoderSettings",
+          "CoderSource",
+          "_ProjectSkills",
+          "CoderPlugin"
+        ],
+        "pydantic_ai_pax/plugins/__init__.py": [
+          "Conversation",
+          "SessionCatalog",
+          "PanelView",
+          "SidePanel",
+          "PluginInfo",
+          "PluginCatalog",
+          "QueuedInput",
+          "LiveSession",
+          "LiveSessions",
+          "TaskInfo",
+          "TaskCatalog",
+          "Transcript",
+          "SessionStart",
+          "ConversationChanged",
+          "CommandEnd",
+          "TaskProgress",
+          "ForkInfo",
+          "ForkEnd",
+          "InstallProgress",
+          "PluginLoadFailed",
+          "SessionEnd",
+          "TurnStart",
+          "TurnEnd",
+          "ModelProvider",
+          "UsageWindow",
+          "AccountUsage",
+          "PluginLogin",
+          "_require_name",
+          "_runs_already",
+          "bare_screen",
+          "PluginHost",
+          "NoSettings",
+          "_settings_argument",
+          "_bind",
+          "_as_model",
+          "Plugin",
+          "__getattr__",
+          "LoadedPlugin",
+          "collect",
+          "load_plugin"
+        ],
+        "pydantic_ai_harness/coder/_capability.py": [
+          "_BoundToolOutputs",
+          "_DefaultCaching",
+          "_SetToolStrict",
+          "_ReportExhaustedRetries",
+          "_CoderGuidance",
+          "BenchmarkInstructions",
+          "_file_system",
+          "Coder"
+        ]
+      }
+    },
+    {
+      "name": "05 permission handling symbols",
+      "status": "PASS",
+      "evidence": [
+        "permissions_command",
+        "session_permissions",
+        "DenyUnansweredInSession",
+        "KeepDelegatesChecked",
+        "ApprovalHandler",
+        "approval_handler",
+        "unattended_only",
+        "_is_approval_handler",
+        "approval_question",
+        "shown_in_full",
+        "_question_text",
+        "decision",
+        "_Edit",
+        "_Write",
+        "proposed_diff",
+        "_printable"
+      ]
+    },
+    {
+      "name": "06 code mode components",
+      "status": "PASS",
+      "evidence": {
+        "code_mode/_capability.py": [
+          "DiscoveryAnnouncementPart",
+          "CodeMode",
+          "_visible_announced_tools",
+          "_announced_names",
+          "_DiscoveredCatalog",
+          "_DiscoveredEntry",
+          "_extract_discovered_names"
+        ],
+        "code_mode/_toolset.py": [
+          "_check_monty_sandbox_url",
+          "monty_sandbox_from_url",
+          "_is_os_handler",
+          "_binds",
+          "as_os_handler",
+          "in_durable_execution",
+          "_exhausted_sandbox_limit",
+          "_is_duration_exhausted",
+          "_elided",
+          "_preview",
+          "_describe_started_calls",
+          "CodeModeResourceLimits",
+          "_resolve_resource_limits",
+          "_RunCodeArgs",
+          "_place_hidden_tools",
+          "_split_by_placement",
+          "_jsonable_key",
+          "_jsonable_for_sandbox",
+          "_policy_has_clock",
+          "_base_description",
+          "_functions_header",
+          "_tool_search_addendum",
+          "CodeModeReturnSchemaWarning",
+          "_warn_missing_return_schemas",
+          "global_mode_is_sequential",
+          "_RunCodeTool",
+          "RunCodeExecution",
+          "_started_calls_note",
+          "_raise_usage_limit_exceeded",
+          "_raise_escaped_tool_failed",
+          "_runtime_failure_retry",
+          "CodeModeToolset"
+        ],
+        "code_mode/_streaming.py": [
+          "PartialArgs",
+          "decode_partial_args",
+          "parse_code",
+          "parse_code",
+          "parse_code",
+          "closed_statements"
+        ],
+        "code_mode/_speculation.py": [
+          "SpeculationStats",
+          "SpeculativeCall",
+          "_StepIngredients",
+          "_PartWatch",
+          "_canonical",
+          "_canonical_key",
+          "_MCPSafetyHints",
+          "_SafetyDeclarations",
+          "declares_speculation_safety",
+          "_iter_calls",
+          "_ExtractedCall",
+          "_literal_calls",
+          "_literal_kwargs",
+          "_close_paren",
+          "_text_literal_calls",
+          "_text_literal_calls_to",
+          "SpeculationCoordinator"
+        ]
+      }
+    },
+    {
+      "name": "07 context management components",
+      "status": "PASS",
+      "evidence": {
+        "compaction/_summarizing_compaction.py": [
+          "_model_name",
+          "_history_model_name",
+          "_model_family",
+          "_writes_text",
+          "_non_empty_summary",
+          "_truncate_with_marker",
+          "format_transcript",
+          "_request_part_element",
+          "_response_part_element",
+          "_neutralize_transcript_tags",
+          "_message_element",
+          "_capability_part_element",
+          "_is_transcript_data",
+          "_harness_data_element",
+          "_extract_system_prompts",
+          "_is_user_turn_part",
+          "_first_user_message",
+          "_kept_first_user_message",
+          "is_legacy_summary",
+          "extract_previous_summary",
+          "without_legacy_summaries",
+          "bridge_summary",
+          "_without_bridge_prefix",
+          "_adds_nothing_to_summarize",
+          "_is_kept_user_part",
+          "_is_kept_marker",
+          "_mark_kept",
+          "drain_summary_events",
+          "_is_valid_summary_prompt",
+          "SummarizingCompaction",
+          "write_summary"
+        ],
+        "compaction/_clear_tool_results.py": [
+          "ClearToolResults"
+        ],
+        "compaction/_deduplicate_file_reads.py": [
+          "DeduplicateFileReads"
+        ],
+        "compaction/_context_window.py": [
+          "split_model_id",
+          "resolve_context_window"
+        ]
+      }
+    },
+    {
+      "name": "08 persistence and fallback separation",
+      "status": "PASS",
+      "evidence": {
+        "step_persistence/_capability.py": [
+          "_empty_metadata",
+          "_snapshot_state",
+          "_has_model_response",
+          "StepPersistence"
+        ],
+        "step_persistence/_store.py": [
+          "_atomic_write_text",
+          "_validate_id",
+          "_validate_max_snapshots",
+          "_snapshot_key_sequence",
+          "_retained_seqs",
+          "StepStore",
+          "InMemoryStepStore",
+          "_opt_str",
+          "_snapshot_state",
+          "_snapshot_fields_ok",
+          "_StoredMessages",
+          "_store_messages",
+          "_atomically",
+          "_referenced_messages",
+          "_history_json",
+          "_str_str_dict",
+          "_load_json_object",
+          "_event_to_dict",
+          "_event_from_dict",
+          "_run_to_dict",
+          "_run_from_dict",
+          "_tool_effect_to_dict",
+          "_tool_effect_from_dict",
+          "FileStepStore",
+          "SqliteStepStore",
+          "_run_from_row",
+          "_event_from_row",
+          "_tool_effect_from_row"
+        ],
+        "step_persistence/recovery.py": [
+          "RecoveryInspection",
+          "inspect_recovery"
+        ],
+        "core model fallback": [
+          "ModelFallback",
+          "_pin_id",
+          "_fallen_back_to",
+          "_is_or_wraps"
+        ]
+      }
+    },
+    {
+      "name": "09 full-model coverage and arithmetic",
+      "status": "PASS",
+      "evidence": {
+        "Pax": {
+          "score": 58.487500000000004,
+          "usd": 7.68875
+        },
+        "OpenCode": {
+          "score": 58.2125,
+          "usd": 8.035
+        },
+        "pi": {
+          "score": 57.325,
+          "usd": 6.47125
+        },
+        "deepagents-code": {
+          "score": 57.5625,
+          "usd": 9.425
+        }
+      }
+    },
+    {
+      "name": "10 no universal winner; Pareto analysis",
+      "status": "PASS",
+      "evidence": [
+        {
+          "model": "GPT-6 Luna",
+          "highest_score": [
+            "OpenCode"
+          ],
+          "lowest_cost": [
+            "pi"
+          ],
+          "pareto": [
+            "OpenCode",
+            "pi"
+          ]
+        },
+        {
+          "model": "GPT-6.1 Terra",
+          "highest_score": [
+            "pi"
+          ],
+          "lowest_cost": [
+            "pi"
+          ],
+          "pareto": [
+            "pi"
+          ]
+        },
+        {
+          "model": "Claude Haiku 5.5",
+          "highest_score": [
+            "deepagents-code"
+          ],
+          "lowest_cost": [
+            "pi"
+          ],
+          "pareto": [
+            "pi",
+            "deepagents-code"
+          ]
+        },
+        {
+          "model": "Claude Sonnet 5.5",
+          "highest_score": [
+            "OpenCode"
+          ],
+          "lowest_cost": [
+            "pi"
+          ],
+          "pareto": [
+            "OpenCode",
+            "pi"
+          ]
+        },
+        {
+          "model": "MiniMax M3.1 Flash",
+          "highest_score": [
+            "Pax",
+            "Codex"
+          ],
+          "lowest_cost": [
+            "pi"
+          ],
+          "pareto": [
+            "Pax",
+            "pi"
+          ]
+        },
+        {
+          "model": "Kimi K3.1 Pro",
+          "highest_score": [
+            "OpenCode"
+          ],
+          "lowest_cost": [
+            "pi"
+          ],
+          "pareto": [
+            "OpenCode",
+            "pi"
+          ]
+        },
+        {
+          "model": "GPT-6.2 Sol",
+          "highest_score": [
+            "pi"
+          ],
+          "lowest_cost": [
+            "pi"
+          ],
+          "pareto": [
+            "pi"
+          ]
+        },
+        {
+          "model": "Claude Opus 5.5",
+          "highest_score": [
+            "deepagents-code"
+          ],
+          "lowest_cost": [
+            "pi"
+          ],
+          "pareto": [
+            "pi",
+            "deepagents-code"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "11 score and cost sensitivity",
+      "status": "PASS",
+      "evidence": {
+        "sol_cost_reduction_percent": 56.247030878859846,
+        "opus_cost_reduction_percent": 1.9521912350597688,
+        "sol_relaxed_gap": 4.6,
+        "sol_stock_gap": 1.2,
+        "opus_relaxed_gap": 0.8,
+        "opus_stock_gap": 1.4
+      }
+    },
+    {
+      "name": "12 synthetic accepted-task cost inversion",
+      "status": "PASS",
+      "evidence": {
+        "inputs": {
+          "A": {
+            "direct": 10,
+            "rework": 50,
+            "accepted": 6
+          },
+          "B": {
+            "direct": 20,
+            "rework": 10,
+            "accepted": 8
+          }
+        },
+        "cost_per_validated_task": {
+          "A": 10.0,
+          "B": 3.75
+        }
+      }
+    }
+  ],
+  "passed": 12,
+  "model_calls": 0
+}
